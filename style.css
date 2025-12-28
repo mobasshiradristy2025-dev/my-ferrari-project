@@ -5,6 +5,11 @@
     border: border-box;
 
 }
+@media(max-width:900px){
+    body{
+        background-color: darkslategray;
+    }
+}
 .navber{
     height: 60px;
     background-color: transparent;
@@ -344,4 +349,187 @@ button{
     justify-content: center;
     position: relative;
     left: 50%;
+}
+/* ===============================
+   RESPONSIVE CSS
+   =============================== */
+
+/* ---------- TABLET (max 900px) ---------- */
+@media (max-width: 900px) {
+
+    /* NAVBAR */
+    .navber{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    a{
+        margin: 10px;
+        font-size: 14px;
+        top: 0;
+        left: 0;
+    }
+
+    /* HERO TEXT */
+    .hero{
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 40px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* NEWS SECTION */
+    .news-container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content,
+    .newsimag{
+        width: 100%;
+        height: auto;
+        padding: 40px;
+    }
+
+    /* COLLECTION SECTION */
+    .picture{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .bags,
+    .man{
+        width: 100%;
+        height: 450px;
+    }
+
+    /* STYLE CAR */
+    .stylecar{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .car1,
+    .car2{
+        width: 100%;
+        height: 400px;
+    }
+
+    .image1{
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* FOOTER COLUMNS */
+    .paragraph{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 40px 0;
+        bottom: 0;
+    }
+
+    .heading{
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    /* SOCIAL LINKS */
+    .link{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+        padding: 30px;
+        bottom: 0;
+    }
+
+    .text{
+        position: static;
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .last,
+    .lastline,
+    .footer{
+        bottom: 0;
+        height: auto;
+    }
+}
+
+
+/* ---------- MOBILE (max 576px) ---------- */
+@media (max-width: 576px) {
+
+    /* NAVBAR */
+    .navber{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img{
+        width: 60px;
+        height: 60px;
+        left: 0;
+    }
+
+    a{
+        font-size: 13px;
+        margin: 6px 0;
+    }
+
+    /* HERO */
+    .hero h1{
+        font-size: 22px;
+    }
+
+    .discover{
+        font-size: 18px;
+    }
+
+    /* NEWS TEXT */
+    .content{
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    /* COLLECTION TEXT */
+    .bags,
+    .man{
+        font-size: 18px;
+    }
+
+    /* SUBSCRIBE */
+    .conclusion{
+        font-size: 16px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .subscribe{
+        width: 200px;
+        height: 60px;
+    }
+
+    /* FOOTER COLUMNS */
+    .heading{
+        width: 100%;
+        text-align: center;
+    }
+
+    .lastline{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .logof{
+        left: 0;
+        margin: auto;
+    }
 }
